@@ -41,13 +41,13 @@ while z == 0:
                 record_i = i
             j = 1
             i = i - 1
-        for k in range(i, record_i, 1):
-            new_list.append(listed_inputed_string[k])
-        new_string = list_to_string(new_list)
-        del listed_inputed_string[i:record_i]
-        listed_inputed_string.insert(i, str(chn_to_arabic(new_string)))
-        i = i + 1
-        new_list = []
+            for k in range(i, record_i, 1):
+                new_list.append(listed_inputed_string[k])
+            new_string = list_to_string(new_list)
+            del listed_inputed_string[i:record_i]
+            listed_inputed_string.insert(i, str(chn_to_arabic(new_string)))
+            i = i + 1
+            new_list = []
     if i == len(listed_inputed_string) - 1:
         break
 final_string = list_to_string(listed_inputed_string)
