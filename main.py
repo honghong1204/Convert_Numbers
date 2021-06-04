@@ -111,13 +111,13 @@ for now in range(len(file_list)):
             if i == len(listed_inputed_string) - 1:
                 break
         final_string = list_to_string_B(listed_inputed_string)
-        print("Writing", file_list[now])
+        print("Success", file_list[now])
         w = open(new_route + "\\" + file_list[now], mode="w", encoding="utf-8")
         w.write(final_string)
     except:
         error_list.append(file_list[now])
 
 for error in range(len(error_list)):
-    print("****** Remove", error_list[error], "******")
+    print("****** FAIL", error_list[error], "******")
 
 print("Error Rate:", len(error_list) / len(file_list))
