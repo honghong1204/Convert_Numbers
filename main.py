@@ -29,6 +29,7 @@ def list_to_string_B(inputed_list):
     inputed_list = trad_num_to_simp_num(inputed_list)
     string = "".join(inputed_list)
     string = string.replace("万", "萬")
+    string = string.replace("亿", "億")
     return string
 
 
